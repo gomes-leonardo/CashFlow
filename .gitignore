@@ -4,3 +4,15 @@ appsettings.Development.json
 appsettings.Production.json
 appsettings.Staging.json
 secrets.json
+*.user
+*.suo
+.vscode/
+bin/
+*.log
+*.cache
+*.pdb
+*.exe
+*.dll
+*.db
+*.lock
+obj/
