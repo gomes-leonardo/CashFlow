@@ -19,7 +19,12 @@ public class RegisterExpenseUseCase
 
        var result = validator.Validate(request);
 
-       var errorMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
+        if (!result.IsValid)
+        {
+            var errorMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
+
+            throw new ArgumentException();
+        }
 
 
     }
