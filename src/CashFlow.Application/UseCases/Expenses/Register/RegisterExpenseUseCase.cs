@@ -15,29 +15,12 @@ public class RegisterExpenseUseCase
 
     private void Validate(RequestRegisterExpenseJson request)
     {
-        var titleIsEmpty = string.IsNullOrEmpty(request.Title);
-        if (titleIsEmpty)
-        {
-            throw new ArgumentException("The title field is required.");
-        }
+       var validator = new RegisterExpenseValidator();
 
-        if (request.Amount <= 0)
-        {
-            throw new ArgumentException("The amount must be greather than zero.");
-        }
+       var result = validator.Validate(request);
 
-        var result = DateTime.Compare(request.Date, DateTime.UtcNow);
-        if (result > 0)
-        {
-            throw new ArgumentException("Expenses cannot be for the future");
-        }
+       var errorMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
 
-        var paymentTypeIsValid = Enum.IsDefined(typeof(PaymentType), request.PaymentType);
 
-        if (!paymentTypeIsValid)
-        {
-            throw new ArgumentException("Payment type is not valid");
-
-        }
     }
 }
