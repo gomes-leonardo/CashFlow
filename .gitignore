@@ -16,3 +16,5 @@ bin/
 *.db
 *.lock
 obj/
+packages/
+.nuget/
