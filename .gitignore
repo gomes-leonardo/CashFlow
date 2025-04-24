@@ -1,20 +1,25 @@
-.vs
+# Pastas de build
+bin/
+obj/
+
+# Configurações do Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Arquivos de cache e lock
+*.log
+*.cache
+*.lock
+
+# Configurações de ambiente
 appsettings.json
 appsettings.Development.json
 appsettings.Production.json
 appsettings.Staging.json
 secrets.json
-*.user
-*.suo
-.vscode/
-bin/
-*.log
-*.cache
-*.pdb
-*.exe
-*.dll
-*.db
-*.lock
-obj/
+
+# Dependências do NuGet
 packages/
 .nuget/

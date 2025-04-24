@@ -6,4 +6,82 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="PaymentTypeName\ResourcePaymentTypeName-fr.Designer.cs">
+      <DependentUpon>ResourcePaymentTypeName-fr.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="PaymentTypeName\ResourcePaymentTypeName-pt-PT.Designer.cs">
+      <DependentUpon>ResourcePaymentTypeName-pt-PT.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="PaymentTypeName\ResourcePaymentTypeName-pt-BR.Designer.cs">
+      <DependentUpon>ResourcePaymentTypeName-pt-BR.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="PaymentTypeName\ResourcePaymentTypeName.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourcePaymentTypeName.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ResourceReportGenerationMessages-pt-PT.Designer.cs">
+      <DependentUpon>ResourceReportGenerationMessages-pt-PT.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\ResourceReportGenerationMessages.fr.Designer.cs">
+      <DependentUpon>ResourceReportGenerationMessages.fr.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\ResourceReportGenerationMessages-pt-br.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceReportGenerationMessages-pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ResourceReportGenerationMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceReportGenerationMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="PaymentTypeName\ResourcePaymentTypeName-fr.resx">
+      <LastGenOutput>ResourcePaymentTypeName-fr.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PaymentTypeName\ResourcePaymentTypeName-pt-PT.resx">
+      <LastGenOutput>ResourcePaymentTypeName-pt-PT.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PaymentTypeName\ResourcePaymentTypeName-pt-BR.resx">
+      <LastGenOutput>ResourcePaymentTypeName-pt-BR.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PaymentTypeName\ResourcePaymentTypeName.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourcePaymentTypeName.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Reports\ResourceReportGenerationMessages-pt-PT.resx">
+      <LastGenOutput>ResourceReportGenerationMessages-pt-PT.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Reports\ResourceReportGenerationMessages.fr.resx">
+      <LastGenOutput>ResourceReportGenerationMessages.fr.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Reports\ResourceReportGenerationMessages-pt-BR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceReportGenerationMessages-pt-br.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Reports\ResourceReportGenerationMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceReportGenerationMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

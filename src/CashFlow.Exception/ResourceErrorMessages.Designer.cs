@@ -70,7 +70,16 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Expenses cannot be for the future.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Expense not found..
+        /// </summary>
+        public static string EXPENSE_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("EXPENSE_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Expenses cannot be for the future..
         /// </summary>
         public static string EXPENSES_CANNOT_FOR_THE_FUTURE {
             get {
@@ -79,7 +88,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Payment type is not valid.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Payment type is not valid..
         /// </summary>
         public static string PAYMENT_TYPE_INVALID {
             get {
@@ -88,7 +97,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a The title is required.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The title is required..
         /// </summary>
         public static string TITLE_REQUIRED {
             get {
@@ -97,7 +106,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Unknown error.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Unknown error..
         /// </summary>
         public static string UNKNOWN_ERROR {
             get {
